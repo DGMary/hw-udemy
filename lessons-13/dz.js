@@ -5,6 +5,7 @@ function multiply() {
     return 0;
   } else {
     for (let i = 0; i < arguments.length; i++) {
+      if (!isNaN(arguments[i]));
       res *= arguments[i]
     }
     return res;

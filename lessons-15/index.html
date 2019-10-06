@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hello world</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
 
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hello world</title>
+</head>
+
+<body>
+  <h1>Hello world!</h1>
+  </br>1. Создать две функции и дать им осмысленные названия:
+  </br>- первая функция принимает массив и колбэк (одна для всех вызовов)
+  </br>- вторая функция (колбэк) обрабатывает каждый элемент массива (для каждого вызова свой callback)
+
+  </br>Первая функция возвращает строку “New value: ” и результат обработки:
+
+  </br>firstFunc([‘my’, ‘name’, ‘is’, ‘Trinity’], handler1) → “New value: MyNameIsTrinity”
+  </br>firstFunc([10, 20, 30], handler2) → “New value: 100, 200, 300,”
+  </br>firstFunc([{age: 45, name: ‘Jhon’}, {age: 20, name: ‘Aaron’}], handler3) →
+  “New value: Jhon is 45, Aaron is 20,”
+  </br>firstFunc([‘abc’, ‘123’], handler4) → “New value: cba, 321,” // строки инвертируются
+
+
+  </br>Подсказка: secondFunc должна быть представлена функцией, которая принимает
+  один аргумент (каждый элемент массива) и возвращает результат его обработки
+
+  </br>2. Написать аналог метода every. Создайте функцию every, она должна принимать первым аргументом массив чисел
+  (обязательно проверьте что передан массив) вторым аргументом callback (обязательно проверьте что передана функция)
+  функция должна возвращать true или false в зависимости от результата вызова callback (проверить число больше 5).
+  Callback должен принимать один элемент массива, его индекс в массиве и весь массив.
+
+  </br>Что такое метод every можно прочитать здесь и ниже в презентации тоже о них идет речь.
+
+
+  <script src="app.js"></script>
+  <script src="dz.js"></script>
+</body>
+
 </html>

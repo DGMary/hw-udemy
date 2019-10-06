@@ -7,17 +7,17 @@
 
 // highOrder('Denis Mescheryakov');
 
-function question(job) {
-  const jobsDictionary = {
-    developer: 'Что такое JS?',
-    teacher: 'Какой предмет вы преподаете?',
-  };
+// function question(job) {
+//   const jobsDictionary = {
+//     developer: 'Что такое JS?',
+//     teacher: 'Какой предмет вы преподаете?',
+//   };
 
-  return function(name) {
-    return jobsDictionary[job] + ' ' + name;
-  };
-}
+//   return function(name) {
+//     return jobsDictionary[job] + ' ' + name;
+//   };
+// }
 
-const developerQustion = question('developer');
-console.log(developerQustion);
-console.log(developerQustion('Denis'));
+// const developerQustion = question('developer');
+// console.log(developerQustion);
+// console.log(developerQustion('Denis'));

@@ -60,5 +60,4 @@ function myCallback1(elem) {
 }
 
 console.log(myEvery([10, 90, 3], myCallback1));
-
 console.log(myEvery([1, 90, 7], myCallback));
